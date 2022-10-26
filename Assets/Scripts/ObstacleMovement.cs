@@ -19,5 +19,10 @@ public class ObstacleMovement : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        if(transform.position.x <= -10)
+        {
+            Destroy(gameObject);
+        }
     }
 }
