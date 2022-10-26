@@ -22,6 +22,15 @@ public class Player : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         transform.position = transform.position + new Vector3(0 , verticalInput * speed * Time.deltaTime, 0);
+
+        if(transform.position.y >= 3.8)
+        {
+            transform.position = new Vector3(transform.position.x, 3.8f, 0);
+        }
+        else if (transform.position.y <= -3.8)
+        {
+            transform.position = new Vector3(transform.position.x, -3.8f, 0);
+        }
     }
 
     public void OnCollisionEnter(Collision other)
@@ -36,7 +45,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Obstacle")
         {
-            Score += 1;
+            Score ++;
             ScoreText.text = "Score: " + Score;
         }
     }
