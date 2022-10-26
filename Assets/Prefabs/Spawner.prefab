@@ -108,3 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnObject: {fileID: 3441854745376264150, guid: 0cebb89d33e7e4f4895f29634533d760,
     type: 3}
+  SpawnObject1: {fileID: 5008605268917956769, guid: d108b6e37fb0a480db1125d0d92d091a,
+    type: 3}
+  SpawnObject2: {fileID: 2149304043724922301, guid: 2c87c383a3e8d429f989c38cfe628f7c,
+    type: 3}
